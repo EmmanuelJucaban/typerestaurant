@@ -5,6 +5,8 @@ const app = express();
 // const PORT: number = 3000;
 const PORT = 3000;
 
+app.use(express.static('public'));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
