@@ -1,14 +1,13 @@
-interface IWaitlist {
+export interface IWaitlist {
   id: string;
   name: string;
-  email?: string;
+  email: string;
   phone: string;
 }
-
 export const waitlist: IWaitlist[] = [
   {
     name: 'Emmanuel',
-    // email: 'manny@m.com',
+    email: 'manny@m.com',
     phone: '119',
     id: '2',
   },
